@@ -6,3 +6,39 @@ body {
 a {
   color: #00b7ff;
 }
+
+.pelis{
+  display: flex;
+  flex-direction: column;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.barra{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cornflowerblue;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.barra a{
+  color: white;
+  text-decoration: none;
+}
+.barra a:hover{
+  color: darkslategrey;
+}
+
+.detail{
+  border: 1px solid cornflowerblue;
+  padding: 1rem;
+}
+.title{
+  color: cornflowerblue;
+  font-weight: bold;
+}

@@ -1,0 +1,17 @@
+<div class="detail">
+    <p class="title">TITLE: </p><b><h2>{{title}}</h2></b>
+    <p class="title">GENRE: </p><i><p>{{genre}}</p></i>
+    <p class="title">PLOT: </p><p>{{plot}}</p>
+    {{#each cast}}
+        <p>STAR OF THE MOVIE: {{name}}</p>
+        <p>OCCUPATION: {{occupation}}</p>
+        <p>CATCH PHRASE: {{catchPhrase}}</p>
+    {{/each}}
+    <form action="/movies/{{id}}/delete" method="post">
+        <button type="submit">DELETE</button>
+    </form>
+    <form action="/movies/{{id}}/edit" method="get">
+        <button type="submit">EDIT MOVIE</button>
+    </form>
+
+</div>
